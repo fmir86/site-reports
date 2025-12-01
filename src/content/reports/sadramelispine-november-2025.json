@@ -1,0 +1,511 @@
+{
+  "metadata": {
+    "id": "sadr-2025-11",
+    "siteId": "sadr-amelis-spine",
+    "siteName": "sadramelispine.com",
+    "siteUrl": "https://sadramelispine.com",
+    "period": "November 2025",
+    "generatedAt": "2025-11-30",
+    "author": "Fabian Miranda",
+    "version": "1.0"
+  },
+  "healthScore": {
+    "overall": 68,
+    "analytics": 70,
+    "seo": 55,
+    "wordpress": 75,
+    "security": 75,
+    "performance": 85
+  },
+  "executiveSummary": {
+    "highlights": [
+      { "label": "Total Users", "value": 121, "unit": "users", "change": 175 },
+      { "label": "Page Views", "value": 163, "unit": "views", "change": 181 },
+      { "label": "Bounce Rate", "value": 57.8, "unit": "%" },
+      { "label": "Mobile Users", "value": 48, "unit": "%" },
+      { "label": "Plugin Updates", "value": 0, "unit": "pending" },
+      { "label": "Database Size", "value": 36.09, "unit": "MB" }
+    ],
+    "criticalIssues": [
+      {
+        "id": 1,
+        "issue": "Elementor Pro license mismatch",
+        "priority": "critical",
+        "category": "wordpress"
+      },
+      {
+        "id": 2,
+        "issue": "2,244 orphaned postmeta entries",
+        "priority": "medium",
+        "category": "performance"
+      }
+    ]
+  },
+  "analytics": {
+    "overview": {
+      "totalUsers": { "label": "Total Users", "value": 121, "change": 175 },
+      "newUsers": { "label": "New Users", "value": 121, "change": 175 },
+      "sessions": { "label": "Sessions", "value": 128, "change": 161 },
+      "pageViews": { "label": "Page Views", "value": 163, "change": 181 },
+      "pagesPerSession": { "label": "Pages/Session", "value": 1.27 },
+      "avgSessionDuration": { "label": "Avg. Duration", "value": 29, "unit": "seconds" },
+      "bounceRate": { "label": "Bounce Rate", "value": 57.8, "unit": "%" },
+      "engagementRate": { "label": "Engagement Rate", "value": 42.2, "unit": "%" }
+    },
+    "devices": [
+      { "device": "Desktop", "users": 59, "sessions": 64, "percentage": 48.8 },
+      { "device": "Mobile", "users": 58, "sessions": 60, "percentage": 47.9 },
+      { "device": "Tablet", "users": 4, "sessions": 4, "percentage": 3.3 }
+    ],
+    "geography": [
+      { "country": "United States", "countryCode": "US", "users": 60, "sessions": 67, "percentage": 49.6 },
+      { "country": "China", "countryCode": "CN", "users": 26, "sessions": 26, "percentage": 21.5 },
+      { "country": "Singapore", "countryCode": "SG", "users": 26, "sessions": 26, "percentage": 21.5 },
+      { "country": "United Kingdom", "countryCode": "GB", "users": 4, "sessions": 4, "percentage": 3.3 },
+      { "country": "Canada", "countryCode": "CA", "users": 3, "sessions": 3, "percentage": 2.5 },
+      { "country": "Germany", "countryCode": "DE", "users": 2, "sessions": 2, "percentage": 1.7 },
+      { "country": "Ireland", "countryCode": "IE", "users": 2, "sessions": 2, "percentage": 1.7 }
+    ],
+    "topPages": [
+      { "path": "/", "title": "Homepage", "views": 128, "avgTimeOnPage": 24 },
+      { "path": "/procedures/", "title": "Procedures", "views": 13, "avgTimeOnPage": 30 },
+      { "path": "/contact/", "title": "Contact", "views": 10, "avgTimeOnPage": 26 },
+      { "path": "/conditions/", "title": "Conditions", "views": 7, "avgTimeOnPage": 22 },
+      { "path": "/new-patients/", "title": "New Patients", "views": 3, "avgTimeOnPage": 16 },
+      { "path": "/technology/", "title": "Technology", "views": 2, "avgTimeOnPage": 21 }
+    ],
+    "trafficSources": [
+      { "channel": "Direct", "users": 108, "sessions": 115, "percentage": 89.3 },
+      { "channel": "Organic Social", "users": 9, "sessions": 9, "percentage": 7.4 },
+      { "channel": "Unassigned", "users": 4, "sessions": 4, "percentage": 3.3 },
+      { "channel": "Organic Search", "users": 0, "sessions": 0, "percentage": 0 },
+      { "channel": "Paid", "users": 0, "sessions": 0, "percentage": 0 }
+    ],
+    "dailyData": [
+      { "date": "2025-11-01", "users": 4, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-02", "users": 3, "sessions": 3, "pageViews": 4 },
+      { "date": "2025-11-03", "users": 4, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-04", "users": 4, "sessions": 5, "pageViews": 6 },
+      { "date": "2025-11-05", "users": 3, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-06", "users": 4, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-07", "users": 4, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-08", "users": 3, "sessions": 4, "pageViews": 4 },
+      { "date": "2025-11-09", "users": 4, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-10", "users": 4, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-11", "users": 4, "sessions": 5, "pageViews": 6 },
+      { "date": "2025-11-12", "users": 4, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-13", "users": 4, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-14", "users": 4, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-15", "users": 4, "sessions": 5, "pageViews": 6 },
+      { "date": "2025-11-16", "users": 4, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-17", "users": 4, "sessions": 4, "pageViews": 6 },
+      { "date": "2025-11-18", "users": 4, "sessions": 5, "pageViews": 6 },
+      { "date": "2025-11-19", "users": 4, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-20", "users": 4, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-21", "users": 4, "sessions": 5, "pageViews": 6 },
+      { "date": "2025-11-22", "users": 4, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-23", "users": 4, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-24", "users": 4, "sessions": 5, "pageViews": 6 },
+      { "date": "2025-11-25", "users": 4, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-26", "users": 4, "sessions": 4, "pageViews": 6 },
+      { "date": "2025-11-27", "users": 4, "sessions": 4, "pageViews": 5 },
+      { "date": "2025-11-28", "users": 4, "sessions": 5, "pageViews": 6 },
+      { "date": "2025-11-29", "users": 4, "sessions": 4, "pageViews": 6 },
+      { "date": "2025-11-30", "users": 3, "sessions": 4, "pageViews": 5 }
+    ]
+  },
+  "seo": {
+    "overview": {
+      "totalClicks": { "label": "Total Clicks", "value": 0, "status": "warning" },
+      "totalImpressions": { "label": "Total Impressions", "value": 0, "status": "warning" },
+      "averageCTR": { "label": "Average CTR", "value": "0%", "status": "neutral" },
+      "averagePosition": { "label": "Average Position", "value": "N/A", "status": "neutral" }
+    },
+    "indexing": {
+      "indexed": 0,
+      "notIndexed": 18,
+      "reason": "Pending re-crawl after noindex fix",
+      "status": "fixed"
+    },
+    "sitemaps": [
+      { "url": "sitemap_index.xml", "urls": 18, "indexed": 0 },
+      { "url": "page-sitemap.xml", "urls": 6, "indexed": 0 },
+      { "url": "medilink_gallrey-sitemap.xml", "urls": 7, "indexed": 0 },
+      { "url": "medilink_gallrey_category-sitemap.xml", "urls": 5, "indexed": 0 }
+    ],
+    "issues": [],
+    "resolvedIssues": [
+      {
+        "issue": "Site Blocked from Google Index (noindex)",
+        "severity": "critical",
+        "status": "resolved",
+        "resolvedDate": "2025-11-30",
+        "solution": "Unchecked 'Discourage search engines' in Settings -> Reading. Submitted re-indexing request to Google Search Console."
+      }
+    ]
+  },
+  "wordpress": {
+    "system": {
+      "siteName": "Saeed S. Sadrameli, M.D.",
+      "tagline": "Neurosurgeon",
+      "url": "https://sadramelispine.com",
+      "adminEmail": "brittany@livingslifescience.com",
+      "language": "en_US",
+      "timezone": "America/Los_Angeles",
+      "multisite": false,
+      "ssl": true,
+      "permalinkStructure": "/%postname%/"
+    },
+    "core": {
+      "version": "6.8.3",
+      "updateAvailable": false,
+      "debugMode": false,
+      "debugLog": false,
+      "debugDisplay": true,
+      "memoryLimit": "40M",
+      "maxMemory": "512M",
+      "wpCron": true
+    },
+    "server": {
+      "hostingProvider": "WP Engine",
+      "serverSoftware": "nginx",
+      "os": "Linux x86_64",
+      "documentRoot": "/nas/content/live/sadrameliprod"
+    },
+    "php": {
+      "version": "8.2.29",
+      "memoryLimit": "512M",
+      "maxExecutionTime": "43300s",
+      "maxInputVars": "10000",
+      "postMaxSize": "100M",
+      "uploadMaxFilesize": "50M",
+      "opcache": false,
+      "extensions": [
+        { "name": "cURL", "enabled": true },
+        { "name": "DOM", "enabled": true },
+        { "name": "Imagick", "version": "3.7.0", "enabled": true },
+        { "name": "GD", "version": "2.3.0", "enabled": true },
+        { "name": "OpenSSL", "version": "3.0.2", "enabled": true },
+        { "name": "Mbstring", "enabled": true },
+        { "name": "Intl", "enabled": true },
+        { "name": "Zip", "enabled": true }
+      ]
+    },
+    "database": {
+      "version": "8.0.43",
+      "server": "Percona Server",
+      "name": "wp_sadrameliprod",
+      "host": "127.0.0.1:3306",
+      "tablePrefix": "wp_",
+      "charset": "utf8",
+      "collation": "utf8_unicode_ci",
+      "totalTables": 83,
+      "totalSize": "36.09 MB",
+      "totalSizeMB": 36.09,
+      "totalRows": 8028,
+      "largestTables": [
+        { "name": "wp_postmeta", "size": "17.98 MB", "sizeMB": 17.98, "rows": 5488 },
+        { "name": "wp_layerslider_revisions", "size": "4.39 MB", "sizeMB": 4.39, "rows": 38 },
+        { "name": "wp_options", "size": "3.52 MB", "sizeMB": 3.52, "rows": 779 },
+        { "name": "wp_sbtt_feed_caches", "size": "2.03 MB", "sizeMB": 2.03, "rows": 12 },
+        { "name": "wp_layerslider", "size": "1.39 MB", "sizeMB": 1.39, "rows": 10 },
+        { "name": "wp_posts", "size": "1.23 MB", "sizeMB": 1.23, "rows": 465 }
+      ],
+      "cleanup": [
+        { "metric": "Post Revisions", "count": 0, "status": "good" },
+        { "metric": "Auto Drafts", "count": 1, "status": "good" },
+        { "metric": "Trashed Posts", "count": 0, "status": "good" },
+        { "metric": "Spam Comments", "count": 5, "status": "warning" },
+        { "metric": "Total Transients", "count": 8, "status": "good" },
+        { "metric": "Expired Transients", "count": 0, "status": "good" },
+        { "metric": "Orphaned Postmeta", "count": 2244, "status": "warning" },
+        { "metric": "Orphaned Usermeta", "count": 0, "status": "good" },
+        { "metric": "Orphaned Commentmeta", "count": 0, "status": "good" }
+      ],
+      "autoload": {
+        "size": "60.66 KB",
+        "sizeKB": 60.66,
+        "count": 491,
+        "status": "good"
+      }
+    },
+    "plugins": {
+      "total": 15,
+      "active": 15,
+      "inactive": 0,
+      "muPlugins": 6,
+      "updatesAvailable": 0,
+      "autoUpdatesEnabled": 0,
+      "list": [
+        { "name": "Breadcrumb NavXT", "slug": "breadcrumb-navxt", "version": "7.4.1", "author": "John Havlik", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "Contact Form 7", "slug": "contact-form-7", "version": "6.1.4", "author": "Takayuki Miyoshi", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "Elementor", "slug": "elementor", "version": "3.33.2", "author": "Elementor.com", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "Elementor Pro", "slug": "elementor-pro", "version": "3.28.4", "author": "Elementor.com", "active": true, "updateAvailable": true, "latestVersion": "3.33.1", "autoUpdate": false, "licenseIssue": true },
+        { "name": "Jeeves Site Reporter", "slug": "jeeves-site-reporter", "version": "1.0.0", "author": "Fabian Miranda", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "LayerSlider", "slug": "layerslider", "version": "7.13.0", "author": "Kreatura Media", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "MC4WP: Mailchimp", "slug": "mailchimp-for-wp", "version": "4.10.8", "author": "ibericode", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "Medilink-Core", "slug": "medilink-core", "version": "1.6.5", "author": "RadiusTheme", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "Perfect Images", "slug": "perfect-images", "version": "7.0.7", "author": "Jordy Meow", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "Popup Maker", "slug": "popup-maker", "version": "1.21.5", "author": "Popup Maker", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "Redux Framework", "slug": "redux-framework", "version": "4.5.9", "author": "Team Redux", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "RT Framework", "slug": "rt-framework", "version": "2.4", "author": "RadiusTheme", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "Site Kit by Google", "slug": "google-site-kit", "version": "1.166.0", "author": "Google", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "Yoast Duplicate Post", "slug": "duplicate-post", "version": "4.5", "author": "Enrico Battocchi & Team Yoast", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "Yoast SEO", "slug": "wordpress-seo", "version": "26.4", "author": "Team Yoast", "active": true, "updateAvailable": false, "autoUpdate": false }
+      ],
+      "muList": [
+        { "name": "Force Strong Passwords", "slug": "force-strong-passwords", "version": "1.8.0", "author": "WP Engine", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "WP Engine Cache Plugin", "slug": "wpe-cache-plugin", "version": "1.3.0", "author": "WP Engine", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "WP Engine Seamless Login", "slug": "wpe-seamless-login", "version": "1.6.1", "author": "WP Engine", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "WP Engine Security Auditor", "slug": "wpe-security-auditor", "version": "1.1.1", "author": "WP Engine", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "WP Engine System", "slug": "wpe-system", "version": "6.5.2", "author": "WP Engine", "active": true, "updateAvailable": false, "autoUpdate": false },
+        { "name": "WP Engine Update Source Selector", "slug": "wpe-update-source-selector", "version": "1.1.5", "author": "WP Engine", "active": true, "updateAvailable": false, "autoUpdate": false }
+      ],
+      "dropins": [
+        { "file": "advanced-cache.php", "description": "Advanced caching" },
+        { "file": "object-cache.php", "description": "Memcached Redux 0.1.7" }
+      ],
+      "updatedThisMonth": [
+        { "name": "Contact Form 7", "from": "6.1.1", "to": "6.1.4" },
+        { "name": "Elementor", "from": "3.28.1", "to": "3.33.2" },
+        { "name": "MC4WP: Mailchimp", "from": "4.10.2", "to": "4.10.8" },
+        { "name": "Perfect Images", "from": "7.0.2", "to": "7.0.7" },
+        { "name": "Redux Framework", "from": "4.5.6", "to": "4.5.9" },
+        { "name": "Site Kit by Google", "from": "1.164.0", "to": "1.166.0" },
+        { "name": "Yoast SEO", "from": "24.7", "to": "26.4" },
+        { "name": "Popup Maker", "from": "1.20.4", "to": "1.21.5" },
+        { "name": "WordPress Importer", "from": "0.8.3", "to": "0.9.5" },
+        { "name": "Smash Balloon Instagram Feed", "from": "6.8.0", "to": "6.10.0" }
+      ],
+      "removedThisMonth": [
+        { "name": "Genesis Blocks", "reason": "Not in use" },
+        { "name": "Feeds for TikTok", "reason": "Not in use" },
+        { "name": "Smash Balloon Instagram Feed", "reason": "Not in use" },
+        { "name": "WordPress Importer", "reason": "Only needed for imports" },
+        { "name": "RT Demo Importer", "reason": "Demo import complete" }
+      ]
+    },
+    "themes": {
+      "total": 3,
+      "updatesAvailable": 1,
+      "active": {
+        "name": "Medilink Child",
+        "version": "1.0",
+        "author": "Radiustheme",
+        "active": true,
+        "isChild": true,
+        "parentTheme": "Medilink 1.6.6",
+        "updateAvailable": false
+      },
+      "list": [
+        { "name": "Medilink Child", "version": "1.0", "author": "Radiustheme", "active": true, "isChild": true, "parentTheme": "Medilink 1.6.6", "updateAvailable": false },
+        { "name": "Medilink", "version": "1.6.6", "author": "Radiustheme", "active": false, "isChild": false, "updateAvailable": false },
+        { "name": "Twenty Twenty-Five", "version": "1.1", "author": "WordPress", "active": false, "isChild": false, "updateAvailable": true, "latestVersion": "1.3" }
+      ]
+    },
+    "security": {
+      "ssl": {
+        "enabled": true,
+        "siteUrlSecure": true,
+        "forceSSLAdmin": true
+      },
+      "users": {
+        "total": 5,
+        "administrators": 5,
+        "adminUsernameExists": false,
+        "list": [
+          { "username": "BrittanyS", "email": "brittany@livingslifescience.com", "role": "administrator", "weakUsername": false },
+          { "username": "Eneetra", "email": "eneetra@livingslifescience.com", "role": "administrator", "weakUsername": false },
+          { "username": "f.miranda", "email": "f.miranda@livingslifescience.com", "role": "administrator", "weakUsername": false },
+          { "username": "fmir86", "email": "fmir86@gmail.com", "role": "administrator", "weakUsername": false },
+          { "username": "sadramelispdev", "email": "digital@livingslifescience.com", "role": "administrator", "weakUsername": false }
+        ]
+      },
+      "fileChecks": [
+        { "check": "wp-config.php Writable", "status": "warning", "value": "Yes", "recommendation": "Consider restricting" },
+        { "check": ".htaccess Writable", "status": "warning", "value": "Yes", "recommendation": "Consider restricting" },
+        { "check": "Uploads Writable", "status": "pass", "value": "Yes" },
+        { "check": "Debug Log Exists", "status": "pass", "value": "No" },
+        { "check": "readme.html Exists", "status": "warning", "value": "Yes", "recommendation": "Delete file" },
+        { "check": "wp-config-sample.php", "status": "warning", "value": "Yes", "recommendation": "Delete file" },
+        { "check": "install.php Exists", "status": "warning", "value": "Yes", "recommendation": "Normal on WPE" }
+      ],
+      "settings": [
+        { "check": "DISALLOW_FILE_EDIT", "status": "pass", "value": "Managed by WPEngine" },
+        { "check": "DISALLOW_FILE_MODS", "status": "pass", "value": "Managed by WPEngine" },
+        { "check": "WP_DEBUG", "status": "pass", "value": "Disabled" },
+        { "check": "WP_DEBUG_DISPLAY", "status": "pass", "value": "Managed by WPEngine" },
+        { "check": "User Registration", "status": "pass", "value": "Disabled" },
+        { "check": "Default Role", "status": "pass", "value": "Subscriber" },
+        { "check": "Search Visibility", "status": "pass", "value": "Allowed" },
+        { "check": "Security Salts", "status": "pass", "value": "Defined" }
+      ],
+      "recommendations": [
+        { "priority": "low", "issue": "Unnecessary files", "action": "Delete readme.html and wp-config-sample.php" }
+      ]
+    },
+    "performance": {
+      "caching": [
+        { "type": "Object Cache", "enabled": true, "details": "Redis" },
+        { "type": "Page Cache", "enabled": true, "details": "WP Engine (advanced-cache.php)" },
+        { "type": "OPcache", "enabled": false, "details": "Consider enabling" }
+      ],
+      "memory": {
+        "current": "14 MB",
+        "currentMB": 14,
+        "peak": "14 MB",
+        "peakMB": 14,
+        "limit": "512 MB",
+        "limitMB": 512,
+        "usagePercent": 2.73
+      },
+      "cron": {
+        "enabled": true,
+        "totalEvents": 33,
+        "overdueEvents": 0,
+        "schedules": ["hourly", "twicedaily", "daily", "weekly", "fifteen_minutes"],
+        "upcomingEvents": [
+          { "hook": "wp_version_check", "nextRun": "Dec 1, 02:32", "schedule": "Twice daily" },
+          { "hook": "wp_scheduled_auto_draft_delete", "nextRun": "Dec 1, 02:34", "schedule": "Daily" },
+          { "hook": "jetpack_clean_nonces", "nextRun": "Dec 1, 02:37", "schedule": "Hourly" },
+          { "hook": "wp_privacy_delete_old_export_files", "nextRun": "Dec 1, 02:52", "schedule": "Hourly" },
+          { "hook": "wp_update_plugins", "nextRun": "Dec 1, 03:02", "schedule": "Twice daily" }
+        ]
+      }
+    },
+    "content": {
+      "posts": { "published": 0, "draft": 0, "total": 1 },
+      "pages": { "published": 6, "draft": 0, "total": 6 },
+      "customPostTypes": [
+        { "type": "elementor_library", "label": "My Templates", "published": 24, "total": 24 },
+        { "type": "popup", "label": "Popups", "published": 10, "total": 10 },
+        { "type": "medilink_gallrey", "label": "Gallery", "published": 6, "total": 6 },
+        { "type": "medilink_doctor", "label": "Doctors", "published": 0, "total": 0 },
+        { "type": "medilink_departments", "label": "Departments", "published": 0, "total": 0 },
+        { "type": "medilink_services", "label": "Services", "published": 0, "total": 0 }
+      ],
+      "media": {
+        "total": 327,
+        "storageMB": 851.96,
+        "recentUploads": 0,
+        "byType": [
+          { "type": "PNG", "count": 234 },
+          { "type": "JPEG", "count": 70 },
+          { "type": "MP4", "count": 16 },
+          { "type": "PDF", "count": 4 },
+          { "type": "QuickTime", "count": 2 },
+          { "type": "GIF", "count": 1 }
+        ]
+      },
+      "comments": {
+        "approved": 0,
+        "pending": 0,
+        "spam": 5,
+        "total": 5
+      },
+      "taxonomies": [
+        { "name": "category", "label": "Categories", "terms": 4 },
+        { "name": "post_tag", "label": "Tags", "terms": 8 },
+        { "name": "medilink_doctor_category", "label": "Doctors Category", "terms": 8 },
+        { "name": "medilink_departments_category", "label": "Departments Category", "terms": 5 },
+        { "name": "medilink_gallrey_category", "label": "Gallery Category", "terms": 5 },
+        { "name": "medilink_services_category", "label": "Services Category", "terms": 1 }
+      ]
+    }
+  },
+  "actionItems": {
+    "critical": [
+      { "id": 1, "task": "Fix Elementor Pro license", "priority": "critical", "details": "Deactivate and reactivate license to fix domain mismatch", "category": "WordPress" }
+    ],
+    "high": [
+      { "id": 2, "task": "Update Elementor Pro", "priority": "high", "details": "After fixing license: 3.28.4 -> 3.33.1", "category": "Plugins" },
+      { "id": 3, "task": "Investigate bot traffic", "priority": "high", "details": "China/Singapore traffic anomaly (21.5% each)", "category": "Analytics" }
+    ],
+    "medium": [
+      { "id": 4, "task": "Clean orphaned postmeta", "priority": "medium", "details": "2,244 entries to clean", "category": "Database" },
+      { "id": 5, "task": "Delete spam comments", "priority": "medium", "details": "5 spam comments", "category": "Content" },
+      { "id": 6, "task": "Update Twenty Twenty-Five", "priority": "medium", "details": "1.1 -> 1.3", "category": "Themes" }
+    ],
+    "low": [
+      { "id": 9, "task": "Enable OPcache", "priority": "low", "details": "Contact WP Engine support", "category": "Performance" },
+      { "id": 10, "task": "Monitor GSC for indexing progress", "priority": "low", "details": "Expected first indexed pages in 1-2 weeks", "category": "SEO" }
+    ],
+    "completed": [
+      { "id": 11, "task": "Fix noindex issue", "completedDate": "2025-11-30", "details": "Settings -> Reading -> Unchecked 'Discourage search engines'" },
+      { "id": 12, "task": "Submit re-indexing to Google", "completedDate": "2025-11-30", "details": "Submitted via Google Search Console" },
+      { "id": 13, "task": "Update 10 plugins", "completedDate": "2025-11-30", "details": "All major plugins updated" },
+      { "id": 14, "task": "Remove 5 unused plugins", "completedDate": "2025-11-30", "details": "Cleaned up inactive plugins" },
+      { "id": 15, "task": "Install Jeeves Site Reporter", "completedDate": "2025-11-30", "details": "Maintenance reporting API installed" }
+    ]
+  },
+  "improvements": [
+    {
+      "category": "SEO",
+      "title": "Noindex Issue Resolved",
+      "description": "The 'Discourage search engines' setting has been disabled and re-indexing requested via Google Search Console.",
+      "impact": "Site is now crawlable. Expected first organic traffic in December 2025."
+    },
+    {
+      "category": "WordPress",
+      "title": "10 Plugins Updated",
+      "description": "Updated Contact Form 7, Elementor, MC4WP, Perfect Images, Redux Framework, Site Kit, Yoast SEO, Popup Maker, and more.",
+      "impact": "Reduced pending updates from 12 to 0 (excluding Elementor Pro due to license issue)"
+    },
+    {
+      "category": "WordPress",
+      "title": "5 Unused Plugins Removed",
+      "description": "Removed Genesis Blocks, Feeds for TikTok, Smash Balloon Instagram Feed, WordPress Importer, and RT Demo Importer.",
+      "impact": "Reduced plugin count from 20 to 15, improved security surface"
+    },
+    {
+      "category": "Analytics",
+      "title": "Traffic Growth +175%",
+      "description": "Total users increased from 44 in October to 121 in November.",
+      "impact": "Significant growth, though some traffic may be bot-related (needs investigation)"
+    }
+  ],
+  "warnings": [
+    {
+      "category": "Analytics",
+      "title": "Suspicious Bot Traffic",
+      "description": "21.5% of traffic from China and 21.5% from Singapore with identical session counts suggests possible bot activity.",
+      "recommendation": "Consider implementing bot filtering in GA4 or Cloudflare protection."
+    }
+  ],
+  "lighthouse": {
+    "mobile": {
+      "scores": {
+        "performance": 54,
+        "accessibility": 92,
+        "bestPractices": 54,
+        "seo": 92
+      },
+      "coreWebVitals": {
+        "fcp": "12.6s",
+        "lcp": "22.7s",
+        "cls": "0",
+        "tbt": "1,890ms",
+        "si": "12.6s"
+      },
+      "strategy": "mobile",
+      "fetchTime": "2025-11-30"
+    },
+    "desktop": {
+      "scores": {
+        "performance": 76,
+        "accessibility": 92,
+        "bestPractices": 54,
+        "seo": 100
+      },
+      "coreWebVitals": {
+        "fcp": "1.8s",
+        "lcp": "3.2s",
+        "cls": "0",
+        "tbt": "450ms",
+        "si": "2.4s"
+      },
+      "strategy": "desktop",
+      "fetchTime": "2025-11-30"
+    }
+  }
+}

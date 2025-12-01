@@ -1,0 +1,84 @@
+.scoreWrapper {
+  @apply flex items-center gap-2;
+}
+
+.scoreCircle {
+  @apply relative w-12 h-12 flex items-center justify-center;
+}
+
+.scoreCircleLarge {
+  @apply w-20 h-20;
+}
+
+.scoreSvg {
+  @apply w-full h-full transform -rotate-90;
+}
+
+.scoreBackground {
+  @apply stroke-[#222222];
+}
+
+.scoreProgress {
+  @apply transition-all duration-500 ease-out;
+  stroke-linecap: round;
+}
+
+.scoreGreen {
+  @apply stroke-emerald-500;
+}
+
+.scoreYellow {
+  @apply stroke-amber-500;
+}
+
+.scoreOrange {
+  @apply stroke-orange-500;
+}
+
+.scoreRed {
+  @apply stroke-red-500;
+}
+
+.scoreValue {
+  @apply absolute inset-0 flex items-center justify-center text-sm font-bold text-[#ededed];
+}
+
+.scoreValueLarge {
+  @apply text-xl;
+}
+
+.scoreLabel {
+  @apply text-xs font-medium;
+}
+
+.scoreLabelGreen {
+  @apply text-emerald-400;
+}
+
+.scoreLabelYellow {
+  @apply text-amber-400;
+}
+
+.scoreLabelOrange {
+  @apply text-orange-400;
+}
+
+.scoreLabelRed {
+  @apply text-red-400;
+}
+
+.scoreBreakdown {
+  @apply grid grid-cols-5 gap-4 mt-6 pt-6 border-t border-[#222222];
+}
+
+.scoreItem {
+  @apply flex flex-col items-center text-center;
+}
+
+.scoreItemLabel {
+  @apply text-xs text-[#888888] mt-1;
+}
+
+.scoreItemValue {
+  @apply text-lg font-semibold;
+}

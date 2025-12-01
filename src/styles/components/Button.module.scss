@@ -1,0 +1,38 @@
+.button {
+  @apply inline-flex items-center justify-center rounded-lg font-medium transition-colors;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2;
+  @apply disabled:opacity-50 disabled:pointer-events-none;
+}
+
+.primary {
+  @apply bg-primary-600 text-white hover:bg-primary-700;
+  @apply focus:ring-primary-500;
+}
+
+.secondary {
+  @apply bg-neutral-200 text-neutral-900 hover:bg-neutral-300;
+  @apply dark:bg-neutral-700 dark:text-neutral-100 dark:hover:bg-neutral-600;
+  @apply focus:ring-neutral-500;
+}
+
+.ghost {
+  @apply bg-transparent hover:bg-neutral-100;
+  @apply dark:hover:bg-neutral-800;
+  @apply focus:ring-neutral-500;
+}
+
+.sm {
+  @apply px-3 py-1.5 text-sm;
+}
+
+.md {
+  @apply px-4 py-2 text-base;
+}
+
+.lg {
+  @apply px-6 py-3 text-lg;
+}
+
+.fullWidth {
+  @apply w-full;
+}

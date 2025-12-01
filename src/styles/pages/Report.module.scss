@@ -1,0 +1,305 @@
+.container {
+  @apply min-h-screen bg-black;
+}
+
+.header {
+  @apply bg-[#0a0a0a] border-b border-[#222222] sticky top-0 z-10;
+}
+
+.headerContent {
+  @apply max-w-7xl mx-auto px-4 py-4 flex items-center gap-4;
+}
+
+.backLink {
+  @apply text-[#888888] hover:text-[#ededed] transition-colors p-1;
+}
+
+.headerInfo {
+  @apply flex-1 min-w-0;
+}
+
+.breadcrumb {
+  @apply flex items-center gap-2 text-sm mb-1;
+}
+
+.breadcrumbLink {
+  @apply text-[#888888] hover:text-[#0070f3] transition-colors;
+}
+
+.breadcrumbSeparator {
+  @apply text-[#444444];
+}
+
+.breadcrumbCurrent {
+  @apply text-[#ededed];
+}
+
+.headerTitle {
+  @apply text-lg font-semibold text-[#ededed] truncate;
+}
+
+.headerMeta {
+  @apply text-sm text-[#888888];
+}
+
+.healthScoreHeader {
+  @apply flex items-center gap-3;
+}
+
+.main {
+  @apply max-w-7xl mx-auto px-4 py-8;
+}
+
+.reportContent {
+  @apply bg-[#111111] rounded-xl border border-[#222222] p-8;
+}
+
+// Dashboard layout styles
+.dashboardGrid {
+  @apply space-y-8;
+}
+
+.section {
+  @apply space-y-4;
+}
+
+.sectionHeader {
+  @apply flex items-center justify-between;
+}
+
+.sectionTitle {
+  @apply text-xl font-semibold text-[#ededed];
+}
+
+.sectionSubtitle {
+  @apply text-sm text-[#888888];
+}
+
+.metricsGrid {
+  @apply grid grid-cols-2 md:grid-cols-4 gap-4;
+}
+
+.chartsRow {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-6;
+}
+
+.chartsFull {
+  @apply grid grid-cols-1 gap-6;
+}
+
+.summaryCards {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
+}
+
+.summaryCard {
+  @apply bg-[#111111] rounded-xl border border-[#222222] p-4;
+}
+
+.summaryCardHeader {
+  @apply flex items-center gap-2 mb-3;
+}
+
+.summaryCardIcon {
+  @apply w-8 h-8 rounded-lg flex items-center justify-center;
+}
+
+.summaryCardTitle {
+  @apply font-medium text-[#ededed];
+}
+
+.summaryCardValue {
+  @apply text-2xl font-bold text-[#ededed];
+}
+
+.summaryCardMeta {
+  @apply text-sm text-[#888888] mt-1;
+}
+
+.tabNav {
+  @apply flex gap-1 p-1 bg-[#111111] rounded-lg overflow-x-auto border border-[#222222];
+}
+
+.tabButton {
+  @apply px-4 py-2 rounded-md text-sm font-medium text-[#888888] transition-colors whitespace-nowrap;
+
+  &:hover {
+    @apply text-[#ededed];
+  }
+}
+
+.tabButtonActive {
+  @apply bg-[#222222] text-[#ededed];
+}
+
+.tabContent {
+  @apply mt-6;
+}
+
+.wpGrid {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-6;
+}
+
+.wpCard {
+  @apply bg-[#111111] rounded-xl border border-[#222222] p-5;
+}
+
+.wpCardTitle {
+  @apply text-lg font-semibold text-[#ededed] mb-4;
+}
+
+.wpInfoGrid {
+  @apply grid grid-cols-2 gap-3;
+}
+
+.wpInfoItem {
+  @apply text-sm;
+}
+
+.wpInfoLabel {
+  @apply text-[#888888];
+}
+
+.wpInfoValue {
+  @apply font-medium text-[#ededed];
+}
+
+.actionItemsGrid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+.actionPrioritySection {
+  @apply space-y-3;
+}
+
+.actionPriorityHeader {
+  @apply flex items-center gap-2;
+}
+
+.actionPriorityBadge {
+  @apply px-2 py-1 rounded text-xs font-medium;
+}
+
+.actionPriorityTitle {
+  @apply font-medium text-[#a3a3a3];
+}
+
+.actionList {
+  @apply space-y-2;
+}
+
+.actionItem {
+  @apply p-4 bg-[#0a0a0a] rounded-lg border-l-4 border border-[#222222];
+}
+
+.actionText {
+  @apply flex flex-col gap-1;
+}
+
+.actionTask {
+  @apply font-medium text-[#ededed] text-sm;
+}
+
+.actionDetails {
+  @apply text-xs text-[#888888];
+}
+
+.actionCategory {
+  @apply text-xs font-medium px-2 py-0.5 rounded-full w-fit mt-1;
+}
+
+// Markdown content styles
+.markdown {
+  @apply text-[#a3a3a3];
+
+  h1 {
+    @apply text-3xl font-bold text-[#ededed] mt-8 mb-4 pb-2 border-b border-[#222222];
+
+    &:first-child {
+      @apply mt-0;
+    }
+  }
+
+  h2 {
+    @apply text-2xl font-semibold text-[#ededed] mt-8 mb-4;
+  }
+
+  h3 {
+    @apply text-xl font-semibold text-[#ededed] mt-6 mb-3;
+  }
+
+  h4 {
+    @apply text-lg font-medium text-[#ededed] mt-4 mb-2;
+  }
+
+  p {
+    @apply mb-4 leading-relaxed;
+  }
+
+  ul, ol {
+    @apply mb-4 pl-6;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  li {
+    @apply mb-1;
+  }
+
+  a {
+    @apply text-[#0070f3] hover:text-[#3291ff] underline;
+  }
+
+  strong {
+    @apply font-semibold text-[#ededed];
+  }
+
+  code {
+    @apply px-1.5 py-0.5 rounded bg-[#222222] text-sm font-mono text-[#ededed];
+  }
+
+  pre {
+    @apply mb-4 p-4 rounded-lg bg-[#0a0a0a] overflow-x-auto border border-[#222222];
+
+    code {
+      @apply bg-transparent p-0;
+    }
+  }
+
+  blockquote {
+    @apply pl-4 border-l-4 border-[#0070f3] italic text-[#888888] mb-4;
+  }
+
+  hr {
+    @apply my-8 border-[#222222];
+  }
+
+  table {
+    @apply w-full mb-4 border-collapse text-sm;
+  }
+
+  thead {
+    @apply bg-[#111111];
+  }
+
+  th {
+    @apply px-4 py-2 text-left font-semibold text-[#ededed] border border-[#222222];
+  }
+
+  td {
+    @apply px-4 py-2 border border-[#222222];
+  }
+
+  tbody tr:nth-child(even) {
+    @apply bg-[#0a0a0a];
+  }
+
+  img {
+    @apply max-w-full h-auto rounded-lg my-4;
+  }
+}

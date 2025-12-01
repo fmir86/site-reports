@@ -1,0 +1,27 @@
+.inputWrapper {
+  @apply flex flex-col gap-1.5;
+}
+
+.label {
+  @apply text-sm font-medium text-neutral-700;
+  @apply dark:text-neutral-300;
+}
+
+.input {
+  @apply w-full px-4 py-2.5 rounded-lg border border-neutral-300;
+  @apply bg-white text-neutral-900;
+  @apply placeholder:text-neutral-400;
+  @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  @apply transition-colors;
+  @apply dark:bg-neutral-800 dark:border-neutral-600 dark:text-neutral-100;
+  @apply dark:placeholder:text-neutral-500;
+}
+
+.error {
+  @apply border-red-500 focus:ring-red-500;
+}
+
+.errorMessage {
+  @apply text-sm text-red-600;
+  @apply dark:text-red-400;
+}

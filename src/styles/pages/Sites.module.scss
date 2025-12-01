@@ -1,0 +1,120 @@
+.container {
+  @apply min-h-screen bg-black;
+}
+
+.header {
+  @apply bg-[#0a0a0a] border-b border-[#222222] sticky top-0 z-10;
+}
+
+.headerContent {
+  @apply max-w-6xl mx-auto px-4 py-4 flex items-center justify-between;
+}
+
+.headerTitle {
+  @apply text-xl font-bold text-[#ededed];
+}
+
+.logoutButton {
+  @apply text-sm text-[#888888] hover:text-[#ededed] transition-colors;
+}
+
+.main {
+  @apply max-w-6xl mx-auto px-4 py-8;
+}
+
+.pageTitle {
+  @apply text-2xl font-bold text-[#ededed] mb-2;
+}
+
+.pageDescription {
+  @apply text-[#888888] mb-8;
+}
+
+.sitesGrid {
+  @apply grid gap-6 md:grid-cols-2 lg:grid-cols-3;
+}
+
+.siteLink {
+  @apply block;
+}
+
+.siteCard {
+  @apply bg-[#111111] rounded-xl border border-[#222222] overflow-hidden;
+  @apply hover:border-[#333333] transition-all duration-200;
+}
+
+/* Card Header */
+.cardHeader {
+  @apply flex items-center gap-3 p-5 pb-4;
+}
+
+.siteIcon {
+  @apply w-10 h-10 rounded-lg bg-[#0a0a0a] border border-[#333333] flex items-center justify-center text-[#0070f3] flex-shrink-0;
+}
+
+.siteInfo {
+  @apply flex-1 min-w-0;
+}
+
+.siteName {
+  @apply font-semibold text-base text-[#ededed] truncate leading-tight;
+}
+
+.siteUrl {
+  @apply text-xs text-[#666666] truncate mt-0.5;
+}
+
+/* Stats Row */
+.statsRow {
+  @apply flex items-center justify-between px-5 py-4 bg-[#0a0a0a] border-y border-[#1a1a1a];
+}
+
+.statGroup {
+  @apply flex items-center gap-6;
+}
+
+.statItem {
+  @apply flex flex-col;
+}
+
+.statValue {
+  @apply text-sm font-semibold text-[#ededed] leading-tight;
+}
+
+.statLabel {
+  @apply text-[10px] text-[#666666] uppercase tracking-wider mt-0.5;
+}
+
+.healthScore {
+  @apply flex-shrink-0;
+}
+
+/* Card Footer */
+.cardFooter {
+  @apply flex items-center justify-between px-5 py-3;
+}
+
+.lastUpdated {
+  @apply text-xs text-[#555555];
+}
+
+.viewDetails {
+  @apply text-xs font-medium text-[#0070f3] flex items-center gap-1;
+}
+
+/* Empty State */
+.emptyState {
+  @apply text-center py-16;
+}
+
+.emptyIcon {
+  @apply w-20 h-20 mx-auto text-[#333333] mb-4;
+}
+
+.emptyTitle {
+  @apply text-lg font-medium text-[#ededed];
+}
+
+.emptyDescription {
+  @apply text-[#888888] mt-1;
+}

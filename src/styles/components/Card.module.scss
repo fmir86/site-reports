@@ -1,0 +1,33 @@
+.card {
+  @apply bg-white rounded-xl border border-neutral-200 shadow-sm;
+  @apply dark:bg-neutral-900 dark:border-neutral-800;
+}
+
+.cardPadded {
+  @apply p-6;
+}
+
+.cardHeader {
+  @apply px-6 py-4 border-b border-neutral-200;
+  @apply dark:border-neutral-800;
+}
+
+.cardTitle {
+  @apply text-lg font-semibold text-neutral-900;
+  @apply dark:text-neutral-100;
+}
+
+.cardDescription {
+  @apply mt-1 text-sm text-neutral-500;
+  @apply dark:text-neutral-400;
+}
+
+.cardContent {
+  @apply p-6;
+}
+
+.cardFooter {
+  @apply px-6 py-4 border-t border-neutral-200 bg-neutral-50;
+  @apply dark:border-neutral-800 dark:bg-neutral-950;
+  @apply rounded-b-xl;
+}
