@@ -102,9 +102,10 @@ class Jeeves_Plugins_Info {
                     'url' => $update_info->url ?? null,
                     'tested' => $update_info->tested ?? null,
                     'requires_php' => $update_info->requires_php ?? null,
-                    'license_issue' => !$package_available, // No package = likely license issue
                     'update_blocked' => !$package_available,
-                    'blocked_reason' => !$package_available ? 'License or subscription required' : null,
+                    // Don't assume reason - package may be unavailable for various reasons:
+                    // license expired, manual update required, third-party plugin, network issues, etc.
+                    'blocked_reason' => !$package_available ? 'Package not available' : null,
                 );
             }
             

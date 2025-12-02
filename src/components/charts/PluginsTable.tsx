@@ -86,8 +86,8 @@ export default function PluginsTable({
                       <span style={{ color: "#f59e0b", fontWeight: 500 }}>
                         {plugin.latestVersion}
                         {plugin.licenseIssue && (
-                          <span style={{ display: "block", fontSize: "11px", color: "#ef4444" }}>
-                            License issue
+                          <span style={{ display: "block", fontSize: "11px", color: "#f59e0b" }}>
+                            Manual update
                           </span>
                         )}
                       </span>
@@ -111,15 +111,15 @@ export default function PluginsTable({
         </div>
       </div>
 
-      {/* Blocked Updates (License Issues) */}
+      {/* Pending Updates (manual action required) */}
       {blockedUpdates.length > 0 && (
-        <div className={styles.chartCard} style={{ borderColor: "rgba(239, 68, 68, 0.3)" }}>
+        <div className={styles.chartCard} style={{ borderColor: "rgba(245, 158, 11, 0.3)" }}>
           <div className={styles.chartHeader}>
             <h3 className={styles.chartTitle}>
-              <span style={{ color: "#ef4444" }}>⚠</span> Blocked Updates
+              <span style={{ color: "#f59e0b" }}>!</span> Pending Updates
             </h3>
             <span className={styles.chartSubtitle}>
-              {blockedUpdates.length} {blockedUpdates.length === 1 ? "plugin requires" : "plugins require"} attention
+              {blockedUpdates.length} {blockedUpdates.length === 1 ? "plugin needs" : "plugins need"} manual action
             </span>
           </div>
           <div className={styles.chartContainer}>
@@ -129,7 +129,7 @@ export default function PluginsTable({
                   <th className={styles.dataTableHeadCell}>Plugin</th>
                   <th className={styles.dataTableHeadCell}>Current</th>
                   <th className={styles.dataTableHeadCell}>Available</th>
-                  <th className={styles.dataTableHeadCell}>Reason</th>
+                  <th className={styles.dataTableHeadCell}>Status</th>
                 </tr>
               </thead>
               <tbody className={styles.dataTableBody}>
@@ -145,8 +145,8 @@ export default function PluginsTable({
                       </span>
                     </td>
                     <td className={styles.dataTableCell}>
-                      <span style={{ color: "#ef4444", fontSize: "12px" }}>
-                        {plugin.blockedReason || "License or subscription required"}
+                      <span style={{ color: "#f59e0b", fontSize: "12px" }}>
+                        {plugin.blockedReason || "Manual update required"}
                       </span>
                     </td>
                   </tr>
