@@ -203,6 +203,7 @@ export interface PluginInfo {
   latestVersion?: string;
   autoUpdate: boolean;
   licenseIssue?: boolean;
+  blockedReason?: string;
 }
 
 export interface PluginUpdate {

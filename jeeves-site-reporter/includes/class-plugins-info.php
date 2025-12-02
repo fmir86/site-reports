@@ -40,16 +40,25 @@ class Jeeves_Plugins_Info {
      */
     private function get_summary($all_plugins, $active_plugins, $update_plugins, $mu_plugins) {
         $updates_count = 0;
+        $blocked_updates_count = 0;
+
         if (is_object($update_plugins) && isset($update_plugins->response)) {
-            $updates_count = count($update_plugins->response);
+            foreach ($update_plugins->response as $plugin_path => $update_info) {
+                $updates_count++;
+                // Count blocked updates (no package available = license issue)
+                if (!isset($update_info->package) || empty($update_info->package)) {
+                    $blocked_updates_count++;
+                }
+            }
         }
-        
+
         return array(
             'total_plugins' => count($all_plugins),
             'active_plugins' => count($active_plugins),
             'inactive_plugins' => count($all_plugins) - count($active_plugins),
             'mu_plugins' => count($mu_plugins),
             'plugins_with_updates' => $updates_count,
+            'blocked_updates' => $blocked_updates_count,
             'auto_updates_enabled' => $this->count_auto_updates($all_plugins),
         );
     }
@@ -85,12 +94,17 @@ class Jeeves_Plugins_Info {
             
             // Add update info if available
             if ($has_update && $update_info) {
+                $package_available = isset($update_info->package) && !empty($update_info->package);
+
                 $plugin_data['update'] = array(
                     'new_version' => $update_info->new_version ?? null,
-                    'package' => isset($update_info->package) && !empty($update_info->package) ? 'Available' : 'Not available',
+                    'package' => $package_available ? 'Available' : 'Not available',
                     'url' => $update_info->url ?? null,
                     'tested' => $update_info->tested ?? null,
                     'requires_php' => $update_info->requires_php ?? null,
+                    'license_issue' => !$package_available, // No package = likely license issue
+                    'update_blocked' => !$package_available,
+                    'blocked_reason' => !$package_available ? 'License or subscription required' : null,
                 );
             }
             

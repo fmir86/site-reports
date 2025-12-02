@@ -12,6 +12,7 @@ interface PluginInfo {
   latestVersion?: string;
   autoUpdate: boolean;
   licenseIssue?: boolean;
+  blockedReason?: string;
 }
 
 interface PluginUpdate {
@@ -46,6 +47,9 @@ export default function PluginsTable({
   const displayPlugins = showOnlyUpdates
     ? plugins.filter((p) => p.updateAvailable)
     : plugins;
+
+  // Plugins with blocked updates (license issues)
+  const blockedUpdates = plugins.filter((p) => p.updateAvailable && p.licenseIssue);
 
   return (
     <div className={styles.pluginsSection}>
@@ -106,6 +110,52 @@ export default function PluginsTable({
           </table>
         </div>
       </div>
+
+      {/* Blocked Updates (License Issues) */}
+      {blockedUpdates.length > 0 && (
+        <div className={styles.chartCard} style={{ borderColor: "rgba(239, 68, 68, 0.3)" }}>
+          <div className={styles.chartHeader}>
+            <h3 className={styles.chartTitle}>
+              <span style={{ color: "#ef4444" }}>⚠</span> Blocked Updates
+            </h3>
+            <span className={styles.chartSubtitle}>
+              {blockedUpdates.length} {blockedUpdates.length === 1 ? "plugin requires" : "plugins require"} attention
+            </span>
+          </div>
+          <div className={styles.chartContainer}>
+            <table className={styles.dataTable}>
+              <thead className={styles.dataTableHead}>
+                <tr>
+                  <th className={styles.dataTableHeadCell}>Plugin</th>
+                  <th className={styles.dataTableHeadCell}>Current</th>
+                  <th className={styles.dataTableHeadCell}>Available</th>
+                  <th className={styles.dataTableHeadCell}>Reason</th>
+                </tr>
+              </thead>
+              <tbody className={styles.dataTableBody}>
+                {blockedUpdates.map((plugin) => (
+                  <tr key={`blocked-${plugin.slug}`} className={styles.dataTableRow}>
+                    <td className={`${styles.dataTableCell} ${styles.dataTableCellBold}`}>
+                      {plugin.name}
+                    </td>
+                    <td className={styles.dataTableCell}>{plugin.version}</td>
+                    <td className={styles.dataTableCell}>
+                      <span style={{ color: "#f59e0b", fontWeight: 500 }}>
+                        {plugin.latestVersion}
+                      </span>
+                    </td>
+                    <td className={styles.dataTableCell}>
+                      <span style={{ color: "#ef4444", fontSize: "12px" }}>
+                        {plugin.blockedReason || "License or subscription required"}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
 
       {/* Updates This Month */}
       {updatedThisMonth.length > 0 && (
