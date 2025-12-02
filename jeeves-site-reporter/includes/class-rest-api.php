@@ -99,6 +99,23 @@ class Jeeves_REST_API {
                 ),
             ),
         ));
+
+        // Monthly updates endpoint (for reports)
+        register_rest_route(self::NAMESPACE, '/updates/monthly', array(
+            'methods' => 'GET',
+            'callback' => array($this, 'get_monthly_updates'),
+            'permission_callback' => array($this, 'check_permission'),
+            'args' => array(
+                'year' => array(
+                    'required' => true,
+                    'sanitize_callback' => 'absint',
+                ),
+                'month' => array(
+                    'required' => true,
+                    'sanitize_callback' => 'absint',
+                ),
+            ),
+        ));
         
         // Health check endpoint (public)
         register_rest_route(self::NAMESPACE, '/health', array(
@@ -139,7 +156,8 @@ class Jeeves_REST_API {
                 '/security' => 'Security audit information',
                 '/content' => 'Content statistics',
                 '/performance' => 'Performance and caching info',
-                '/updates' => 'Recent updates log',
+                '/updates' => 'Recent updates log (last N days)',
+                '/updates/monthly' => 'Monthly updates for reports (year, month params)',
                 '/health' => 'API health check (public)',
             ),
             'authentication' => 'Required via X-Jeeves-API-Key header or api_key parameter',
@@ -244,10 +262,25 @@ class Jeeves_REST_API {
      */
     public function get_updates_log($request) {
         $days = $request->get_param('days');
-        
+
         return new WP_REST_Response(array(
             'generated_at' => current_time('c'),
             'updates' => $this->plugin->updates_logger->get_recent_updates($days),
+        ), 200);
+    }
+
+    /**
+     * Get monthly updates (for reports)
+     */
+    public function get_monthly_updates($request) {
+        $year = $request->get_param('year');
+        $month = $request->get_param('month');
+
+        return new WP_REST_Response(array(
+            'generated_at' => current_time('c'),
+            'year' => $year,
+            'month' => $month,
+            'updates' => $this->plugin->updates_logger->get_monthly_updates($year, $month),
         ), 200);
     }
 }

@@ -202,6 +202,19 @@ export interface PluginInfo {
   updateAvailable: boolean;
   latestVersion?: string;
   autoUpdate: boolean;
+  licenseIssue?: boolean;
+}
+
+export interface PluginUpdate {
+  name: string;
+  from: string;
+  to: string;
+}
+
+export interface PluginChange {
+  name: string;
+  reason?: string;
+  version?: string;
 }
 
 export interface ThemeInfo {
@@ -352,6 +365,9 @@ export interface WordPressData {
     list: PluginInfo[];
     muList?: PluginInfo[];
     dropins?: { file: string; description: string }[];
+    updatedThisMonth?: PluginUpdate[];
+    installedThisMonth?: PluginChange[];
+    removedThisMonth?: PluginChange[];
   };
   themes: {
     total: number;

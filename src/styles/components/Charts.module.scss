@@ -266,3 +266,32 @@
 .emptyState {
   @apply py-8 text-center text-[#666666];
 }
+
+// Plugins Section
+.pluginsSection {
+  @apply space-y-4;
+}
+
+.pluginChangesGrid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.pluginChangeList {
+  @apply list-none p-0 m-0 space-y-2;
+}
+
+.pluginChangeItem {
+  @apply flex items-center justify-between py-2 px-3 bg-[#0a0a0a] rounded-lg;
+}
+
+.pluginChangeName {
+  @apply text-sm text-[#ededed];
+}
+
+.pluginChangeVersion {
+  @apply text-xs text-[#10b981] font-mono;
+}
+
+.pluginChangeReason {
+  @apply text-xs text-[#888888] italic;
+}

@@ -416,6 +416,9 @@ function WordPressTab({ report }: { report: Report }) {
       <PluginsTable
         plugins={wordpress.plugins.list}
         title={`Plugins (${wordpress.plugins.active} active, ${wordpress.plugins.updatesAvailable} updates)`}
+        updatedThisMonth={wordpress.plugins.updatedThisMonth}
+        installedThisMonth={wordpress.plugins.installedThisMonth}
+        removedThisMonth={wordpress.plugins.removedThisMonth}
       />
 
       {/* Caching */}
